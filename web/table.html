@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+</head>
+<body>
+
+<h2><font align="center">Free Lands</font></h2>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Suitable for Agriculture" title="Type in a name">
+<div style="overflow-x:auto;">
+
+<table id="myTable">
+  
+    <tr>
+      <th>Survey No.</th>
+      <th>District</th>
+      <th>Block Panchayath</th>
+      <th>Panchayath</th>
+      <th>Location</th>
+      <th>Pno</th>
+      <th>ANN Precip(mm)</th>
+      <th>Organicc</th>
+      <th>Phosphorus</th>
+      <th>Pottassium</th>
+      <th>pH</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>368/4</td>
+      <td>Ernakulam</td>
+      <td>Alangad</td>
+      <td>Alangad</td>
+      <td></td>
+      <td>1</td>
+      <td>1000</td>
+      <td>.4</td>
+      <td>20.1</td>
+      <td>121.1</td>
+      <td>4.7</td>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <td>812/9</td>
+      <td>Ernakulam</td>
+      <td>Alangad</td>
+      <td>Kadungallor</td>
+      <td></td>
+      <td>2</td>
+      <td>1000</td>
+      <td>16</td>
+      <td>35.6</td>
+      <td>207.9</td>
+      <td>5.1</td>
+      <td>Occupied</td>
+    </tr>
+    <tr>
+      <td>384/3</td>
+      <td>Ernakulam</td>
+      <td>Edappally</td>
+      <td>Cherannallor</td>
+      <td></td>
+      <td>14</td>
+      <td>1000</td>
+      <td>.4</td>
+      <td>20.1</td>
+      <td>122.1</td>
+      <td>5.1</td>
+      <td>Free</td>
+    </tr>
+     <tr>
+      <td>278/5</td>
+      <td>Ernakulam</td>
+      <td>Edappally</td>
+      <td>Kadamakkudy</td>
+      <td></td>
+      <td>13</td>
+      <td>4000</td>
+      <td>.8</td>
+      <td>57.9</td>
+      <td>401.5</td>
+      <td>4.6</td>
+      <td>Free</td>
+    </tr> <tr>
+      <td>567/8</td>
+      <td>Ernakulam</td>
+      <td>Angamaly</td>
+      <td>Kalady</td>
+      <td></td>
+      <td>6</td>
+      <td>4000</td>
+      <td>.8</td>
+      <td>58.9</td>
+      <td>402.5</td>
+      <td>4.6</td>
+      <td>Occupied</td>
+    </tr> <tr>
+      <td>349/8</td>
+      <td>Ernakulam</td>
+      <td>Angamally</td>
+      <td>Kanjaoor</td>
+      <td></td>
+      <td>7</td>
+      <td>1000</td>
+      <td>.4</td>
+      <td>20.1</td>
+      <td>123.1</td>
+      <td>4.6</td>
+      <td>Free</td>
+    </tr> <tr>
+      <td>412/6</td>
+      <td>Ernakulam</td>
+      <td>Koovappady</td>
+      <td>Okkal</td>
+      <td></td>
+      <td>19</td>
+      <td>2000</td>
+      <td>.6</td>
+      <td>34.6</td>
+      <td>205.9</td>
+      <td>5.7</td>
+      <td>Free</td>
+    </tr> <tr>
+      <td>391/7</td>
+      <td>Ernakulam</td>
+      <td>Koovappady</td>
+      <td>Vengoor</td>
+      <td></td>
+      <td>22</td>
+      <td>1000</td>
+      <td>.4</td>
+      <td>20.1</td>
+      <td>122.1</td>
+      <td>4.7</td>
+      <td>Free</td>
+    </tr>
+     <tr>
+      <td>168/4</td>
+      <td>Ernakulam</td>
+      <td>Kothamangalam</td>
+      <td>Kottapady</td>
+      <td></td>
+      <td>25</td>
+      <td>4000</td>
+      <td>.8</td>
+      <td>58.9</td>
+      <td>401.5</td>
+      <td>4.6</td>
+      <td>Free</td>
+    </tr>
+     <tr>
+      <td>275/7</td>
+      <td>Ernakulam</td>
+      <td>Kothamangalam</td>
+      <td>Pindimana</td>
+      <td></td>
+      <td>14</td>
+      <td>4000</td>
+      <td>.8</td>
+      <td>58.9</td>
+      <td>41.5</td>
+      <td>5.1</td>
+      <td>Free</td>
+    </tr>
+  </table>
+</div>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[11];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</body>
+</html>
